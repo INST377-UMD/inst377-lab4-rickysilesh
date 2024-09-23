@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Tasks</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .section {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: calc(50% - 40px);
+            box-sizing: border-box;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pageHeading">INST377 Lab 4</h1>
+    
+    <div class="container">
+        <div class="section" id="alertMeSection">
+            <h2>Alert Me Section</h2>
+            <form id="alertMeForm">
+                <label for="nameInput">Name:</label>
+                <input type="text" id="nameInput" name="name" required>
+                <button type="button" onclick="alertName()">Alert Me</button>
+            </form>
+        </div>
+
+        <div class="section" id="changeColorSection">
+            <h2>Change Color Section</h2>
+            <button type="button" onclick="changeColor()">Change Color</button>
+        </div>
+
+        <div class="section" id="textTesterSection">
+            <h2>Text Tester Section</h2>
+            <form id="textTesterForm">
+                <input type="text" id="textInput" placeholder="Enter text">
+                <button type="button" onclick="validateText()">Validate Text</button>
+            </form>
+        </div>
+
+        <div class="section" id="addTextSection">
+            <h2>Add Text Section</h2>
+            <button type="button" onclick="addTextToHeading()">Add Text</button>
+        </div>
+    </div>
+
+    <script src="lab4tasks.js"></script>
+</body>
+</html>
